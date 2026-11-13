@@ -27,7 +27,7 @@ En `mutacion/`, además, `npm run test:mutacion` pasa Stryker; la CI falla si al
 
 ## Qué hizo la IA
 
-Los ejemplos se escribieron con ayuda de un agente de IA y se revisaron a mano. Cada cifra que citan los artículos se ha obtenido ejecutando este código con las versiones fijadas en cada `package.json`.
+Desarrollado con el enfoque [IA Limpia](https://rubentejera.com/que-es-la-ia-limpia/): un agente de IA escribe el código siguiendo los pasos de cada artículo, los tests y Stryker validan cada paso y el resultado se revisa y se aprueba a mano antes de publicarlo. Las cifras de los artículos salen de ejecutar este código con las versiones fijadas en cada `package.json`.
 
 ## Licencia
 
