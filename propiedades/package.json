@@ -1,0 +1,11 @@
+{
+  "name": "ejemplo-propiedades",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "devDependencies": {
+    "fast-check": "4.10.2"
+  }
+}
