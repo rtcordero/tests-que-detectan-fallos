@@ -1,0 +1,13 @@
+{
+  "name": "ejemplo-mutacion",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "test:mutacion": "stryker run"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "10.1.1",
+    "@stryker-mutator/tap-runner": "10.1.1"
+  }
+}

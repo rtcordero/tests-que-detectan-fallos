@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: ${{ matrix.ejemplo }} en Node ${{ matrix.node }}
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        ejemplo: [mutacion]
+        # La versión de .node-version y la LTS activa.
+        node: ['24.22.2', '26.13.0']
+    defaults:
+      run:
+        working-directory: ${{ matrix.ejemplo }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: ${{ matrix.ejemplo }}/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - if: matrix.ejemplo == 'mutacion'
+        run: npm run test:mutacion

@@ -1,0 +1,6 @@
+{
+  "testRunner": "tap",
+  "tap": { "testFiles": ["test/**/*.test.js"] },
+  "mutate": ["src/**/*.js"],
+  "reporters": ["clear-text", "progress"]
+}
