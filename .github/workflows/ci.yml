@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-24.04
     strategy:
       matrix:
-        ejemplo: [mutacion, propiedades]
+        ejemplo: [mutacion, propiedades, especificacion]
         # La versión de .node-version y la LTS activa.
         node: ['24.22.2', '26.13.0']
     defaults:
