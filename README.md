@@ -12,7 +12,7 @@ El historial va paso a paso: cada commit es un momento del artículo.
 
 ## Requisitos
 
-Node.js 24.22.2 o posterior (`.node-version`).
+Node.js 24.22.3 o posterior (`.node-version`).
 
 ## Uso
 
