@@ -4,7 +4,7 @@ Código de tres artículos de [rubentejera.com](https://rubentejera.com/) sobre 
 
 | Carpeta | Artículo | Qué muestra |
 | --- | --- | --- |
-| `mutacion/` | Mutation testing: pruebas de mutación con Stryker (artículo de próxima publicación) | Una cobertura del 100 % que no detecta un fallo en el límite, y los tests que lo arreglan |
+| `mutacion/` | Mutation testing: [pruebas de mutación con Stryker](https://rubentejera.com/pruebas-de-mutacion/) | Una cobertura del 100 % que no detecta un fallo en el límite, y los tests que lo arreglan |
 | `propiedades/` | Property-based testing: pruebas basadas en propiedades (artículo de próxima publicación) | Dos ejemplos en verde y una propiedad que encuentra el fallo con un céntimo entre dos personas |
 | `especificacion/` | [Spec-driven development (SDD): qué es y cuándo usarlo](https://rubentejera.com/spec-driven-development/) | Criterios de aceptación con identificador y un test que comprueba que cada uno tiene el suyo |
 
